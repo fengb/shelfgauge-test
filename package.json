@@ -1,0 +1,11 @@
+{
+  "name": "shelfgauge-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/shelfgauge/shelfgauge-test",
+  "author": "Benjamin Feng <contact@fengb.me>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node testdata.js"
+  }
+}

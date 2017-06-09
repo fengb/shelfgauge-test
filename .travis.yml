@@ -1,0 +1,8 @@
+language: node_js
+node_js: stable
+after_success:
+  - wget https://raw.githubusercontent.com/shelfgauge/shelfgauge-report/master/node/report.js
+  - node report.js bench.json https://shelfgauge-staging.herokuapp.com/repo/github/shelfgauge~shelfgauge-test/suite
+env:
+  global:
+    secure: wlPPCeW2BXl9Ml9MQhq4X0Q+yC5y+TIy7pa6JJLtc9cD+vtYUhw0olxmdjzrlMxhUf2ZTIfzP/HyF52bB5tJk41EXajsXNScMt+/eoRcacpzDl2aVGbR3yoNzwbIbznCbbhuSoM4e/tz7EBW6gQjsgRVaiK2UbUG6dhBBKnq1xCjX1acSWZRdDfIhzOUyZztc0gYkhza255y1TQI1wwUlM/hiUaBpjqtVw9eWX8pqcyI4bDTgBI5YbsKumDmC7xLQ0WJGA6V7rTIZJRE5U/tk2Cunhu0lCyAVxFDw2g6zCZsdoIL74b9oe+D+sIoEkRC1YOtSKyDaztwPB3We2XG/vPh0O4MBf61iapfN4mKKGZcrnYYoxJtWhb/tpY6/CvK9SnWVb1KLof1t0ff2yS0BRKJRI7zVNdwkUGMmiEcwceRQHAUs66xRGzvP3FaVBk+F7cWNfmlAMifwew9tz2cDBJrhKgHq8wBjDBVsDZEdjiyZA0ulHL09bSkYrFrEppX3vw89PCeWYPsLc3sPB/D7TpIGlhX48MiTFEBo113I3YDIqf9iSJu7dxNUwLEpIfshBfI2OL5FhYF6GIts84A73572EhBUR+zU67xzj+RaIgrLRCNpIu28YIqPLnrFKcWqNi5WGHVFC3k9vdPLx+EI750SDVEzlprL3m6Izt0Jd8=
